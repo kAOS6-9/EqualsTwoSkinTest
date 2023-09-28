@@ -1,0 +1,114 @@
+:root
+{
+    --landing-purple: #7E69BA;
+    --landing-yellow: #FEF5C2;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+}
+
+.desktop img
+{
+    width: 100%;
+}
+
+.background
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.formcont
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    z-index: 1;
+    margin-top: -50%;
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+
+label[for="male"],
+label[for="female"]
+{
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    border: 2px solid #7E69BA;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #7E69BA;
+    width: 100%
+}
+
+.radios label[for="male"],
+.radios label[for="female"]
+{
+    cursor: pointer;
+}
+
+.radios input[type="radio"]:checked+label,
+.Checked+label {
+  background: #7E69BA;
+  color: white;
+  box-shadow: 0px 4px 6px -4px #2D2D2D;
+  font-weight: 500;
+}
+
+.term
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 2%;
+}
+
+.radios
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3%;
+    padding-top: 2%
+}
+
+form
+{
+    width: 30%;
+}
+
+.form-floating
+{
+    padding-bottom: 1%;
+    font-size: 14px;
+    color: #b4b4b4;
+    font-weight: 500;
+}
+
+form
+{
+    position: relative;
+}

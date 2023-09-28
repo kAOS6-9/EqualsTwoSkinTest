@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/result.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+        <link rel="icon" type="image/x-icon" href="assets/landingpage/favicon.ico">
+        <title>Result</title>
+        <script>
+            function score(){
+            var score = localStorage.getItem("value2");
+            document.getElementById("hello").innerHTML = score;
+            if (score == 3)
+            {
+                document.getElementById("ind").style.rotate = "0deg";
+            }
+            if (score == 4)
+            {
+                document.getElementById("ind").style.WebkitTransitionDuration='1s';
+                document.getElementById("ind").style.rotate = "45deg";
+            }
+            if (score == 5)
+            {
+                document.getElementById("ind").style.WebkitTransitionDuration='1s';
+                document.getElementById("ind").style.rotate = "60deg";
+            }
+            if (score == 6)
+            {
+                document.getElementById("ind").style.WebkitTransitionDuration='1s';
+                document.getElementById("ind").style.rotate = "90deg";
+            }
+            if (score == 7)
+            {
+                document.getElementById("ind").style.WebkitTransitionDuration='1s';
+                document.getElementById("ind").style.rotate = "120deg";
+            }
+            if (score == 8)
+            {
+                document.getElementById("ind").style.WebkitTransitionDuration='1s';
+                document.getElementById("ind").style.rotate = "150deg";
+            }
+            if (score == 9)
+            {
+                document.getElementById("ind").style.WebkitTransitionDuration='1s';
+                document.getElementById("ind").style.rotate = "180deg";
+            }
+            console.log(localStorage.getItem("value2"));
+            }
+        </script>
+</head>
+<body onload="score()">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://equalstwo.com/"><img src="assets/landingpage/logo.png" alt=""></a>
+            </div>
+            <div class="hamburger">
+                <!-- <img src="assets/landingpage/hamburger.svg" alt=""> -->
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="title">
+            <p>Skin Condition Score (SCS)</p>
+        </div>
+        <div class="guagecont">
+            <div class="guage">
+                <img src="assets/landingpage/guage.png" alt="">
+            </div>
+        </div>
+        <div class="indi">
+            <div class="indicator">
+                <img id="ind" src="assets/landingpage/indicator.png" alt="">
+            </div>
+        </div>
+        <div class="noted">
+            <div class="note">
+                <img src="assets/landingpage/note.png" alt="">
+            </div>
+        </div>
+        <div class="scorecont">
+            <div class="score">
+                <p class="child">Your Child's Score:</p>
+                <p class="number" id="hello"></p>
+            </div>
+        </div>
+        <div class="animalscont">
+            <div class="animals">
+                <img src="assets/landingpage/grassanimals.png" alt="">
+            </div>
+            <div class="animalsmob">
+                <img src="assets/landingpage/grassmob.png" alt="">
+            </div>
+        </div>
+        <div class="subtitle">
+            <p>We Recommend Using:</p>
+        </div>
+        <div class="back">
+            <div class="bgbg">
+            </div>
+        </div>
+        <div class="productcont">
+            <div class="products">
+                <img src="assets/landingpage/products.png" alt="">
+            </div>
+            <div class="productstab">
+                <img src="assets/landingpage/Productstabd.png" alt="">
+            </div>
+        </div>
+        <div class="butt">
+            <button class="buy" onclick="window.location.href='https://www.amazon.in/s?k=equals+two&sprefix=equals%2Caps%2C414&ref=nb_sb_ss_ts-doa-p_2_6'"><img src="assets/landingpage/amazon.png"></button>
+        </div>
+        <div class="butt2">
+            <button class="retake" onclick="window.location.href='intructions.html'">Retake the Test<span></span></button>
+        </div>
+        <div class="foot">
+            <footer>
+                <p>All recommendations are based on IAP Guidelines
+                    Read more about the<br><a href="guidelines.html">IAP Guidelines here...</a>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

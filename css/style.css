@@ -1,0 +1,212 @@
+:root
+{
+    --landing-purple: #7E69BA;
+    --landing-yellow: #FEF5C2;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+}
+
+.landing-sub
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-sub img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.butt
+{
+    z-index: 1;
+    margin-top: 47%;
+    position: absolute;
+}
+
+a.start-button
+{
+    background: linear-gradient(to right,#7e69ba ,#7e69ba);
+    background-color: #7e69ba;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 15px 24px;
+    border: 0px solid #000;
+    border-radius: 100px;
+    display: inline-block;
+    box-shadow: 0px 4px 6px -4px #2D2D2D;
+}
+a.start-button:hover
+{
+    background: linear-gradient(to right,#9080c2 ,#7d5ee3);
+    background-color: #9080c2;
+}
+a.start-button:active
+{
+    transform: scale(0.95);
+}
+
+
+@media (min-width:581px) and (max-width: 767px)
+{
+    .desktop
+    {
+        display: none !important;
+    }
+    .tablet
+    {
+        display: none !important;
+    }
+    .mobile
+    {
+        display: block !important;
+    }
+    a.start-button
+    {
+        background: linear-gradient(to right,#7e69ba ,#6433e0);
+        background-color: #7e69ba;
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        padding: 16px 80px;
+        border: 0px solid #000;
+        border-radius: 100px;
+        display: inline-block;
+        box-shadow: 0px 2px 5px 0px #2D2D2D;
+    }
+    .butt
+    {
+        z-index: 1;
+        margin-top: 150%;
+        position: absolute;
+    }
+}
+
+/* Mobile View */
+@media (min-width: 0px) and (max-width: 580px) 
+{
+    .desktop
+    {
+        display: none !important;
+    }
+    .tablet
+    {
+        display: none !important;
+    }
+    .mobile
+    {
+        display: block !important;
+    }
+    a.start-button
+    {
+        background: linear-gradient(to right,#7e69ba ,#6433e0);
+        background-color: #7e69ba;
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        padding: 12px 30px;
+        border: 0px solid #000;
+        border-radius: 100px;
+        display: inline-block;
+        box-shadow: 0px 2px 5px 0px #2D2D2D;
+    }
+    .butt
+    {
+        z-index: 1;
+        margin-top: 150%;
+        position: absolute;
+    }
+    .logo img
+    {
+        width: 60%;
+    }
+    .hamburger img
+    {
+        width: 50%;
+    }
+    nav
+    {
+        padding: 10px 10px 5px 10px;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 992px)
+{
+    .desktop
+    {
+        display: none !important;
+    }    
+    .tablet
+    {
+        display: block !important;
+    }
+    .mobile
+    {
+        display: none !important;
+    }
+    .butt
+    {
+        z-index: 1;
+        margin-top: 62%;
+        position: absolute;
+    }
+    a.start-button
+    {
+        background: linear-gradient(to right,#7e69ba ,#6433E0);
+        background-color: #7e69ba;
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        padding: 15px 24px;
+        border: 0px solid #000;
+        border-radius: 100px;
+        display: inline-block;
+        box-shadow: 0px 4px 6px -4px #2D2D2D;
+    }
+}
+
+/* Desktop-View */
+@media (min-width: 993px)
+{
+    .desktop
+    {
+        display: block !important;
+    }    
+    .tablet
+    {
+        display: none !important;
+    }
+    .mobile
+    {
+        display: none !important;
+    }
+}

@@ -1,0 +1,262 @@
+:root
+{
+    --landing-purple: #7E69BA;
+    --landing-yellow: #FEF5C2;
+}
+
+*
+{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+}
+
+.heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--landing-purple);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.heading h1
+{
+    color: white;
+    font-weight: 500;
+    font-size: 38px;
+    text-align: center;
+}
+
+.bottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    width: 100%;
+}
+
+.formcontainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.form .input-box
+{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.input-box label
+{
+    color: #333;
+}
+
+.form .input-box input
+{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #7E69BA;
+    margin-top: 8px;
+}
+
+.form .column
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-top: 10px;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  p
+  {
+    padding-left: 24px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.input-box1
+{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #7E69BA;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+.form button
+{
+    height: 55px;
+    width: 100%;
+    background-color: #7E69BA;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 30px;
+    border-radius: 100px;
+    transition: all 0.2 ease;
+}
+
+.form button:hover
+{
+    background-color: #917fc5;
+}
+.bottom img
+{
+    width: 100%;
+}
+
+@media (max-width:580px)
+{
+    .desktop
+    {
+        display: none !important;
+    }
+    .tablet
+    {
+        display: none !important;
+    }
+    .mobile
+    {
+        display: block !important;
+    }
+    .logo img
+    {
+        width: 60%;
+    }
+    .hamburger img
+    {
+        width: 50%;
+    }
+    nav
+    {
+        padding: 10px 10px 10px 10px;
+    }
+    .heading h1
+    {
+        font-size: 26px;
+        padding-top: 1%;
+    }
+
+}
+
+@media (min-width: 581px)
+{
+    .desktop
+    {
+        display: none !important;
+    }    
+    .tablet
+    {
+        display: block !important;
+    }
+    .mobile
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width: 993px)
+{
+    .desktop
+    {
+        display: block !important;
+    }    
+    .tablet
+    {
+        display: none !important;
+    }
+    .mobile
+    {
+        display: none !important;
+    }
+}

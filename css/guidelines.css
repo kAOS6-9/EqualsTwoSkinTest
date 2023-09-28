@@ -1,0 +1,111 @@
+:root
+{
+    --landing-purple: #7E69BA;
+    --landing-yellow: #FEF5C2;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7E69BA;
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+    width: 100%;
+    height: 70px;
+}
+
+.back
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+    width: 100%;
+    height: 80vh;
+    max-height: 100%;
+    background: linear-gradient(180deg, #FEF5C2 1.04%, rgba(255, 255, 255, 0) 100%);
+}
+
+.first
+{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 100;
+    margin-top: -75vh;
+}
+
+.bottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.bottom img
+{
+    width: 100%;
+}
+
+@media (max-width: 420px)
+{
+    .logo img
+    {
+        width: 60%;
+    }
+    .hamburger img
+    {
+        width: 50%;
+    }
+    nav
+    {
+        padding: 10px 10px 5px 10px;
+    }
+    .first
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    .first img
+    {
+        width: 90%;
+    }
+
+    .cat
+    {
+        text-align: center;
+    }
+
+    .title
+    {
+        font-size: 20px;
+    }
+}

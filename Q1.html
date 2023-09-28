@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/Q1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="icon" type="image/x-icon" href="assets/landingpage/favicon.ico">
+        <title>Dryness</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://equalstwo.com/"><img src="assets/landingpage/logo.png" alt=""></a>
+            </div>
+            <div class="hamburger">
+                <!-- <img src="assets/landingpage/hamburger.svg" alt=""> -->
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="progressbar">
+            <div class="progress">
+                <img src="assets/landingpage/1.png" alt="">
+            </div>
+        </div>
+        <div class="header">
+            <div class="title">
+                <p>Dryness</p>
+            </div>
+        </div>
+        <div class="description">
+            <div class="subtitle">
+                <p>Carefully examine your baby’s skin in respect to the Images provided and select the image which closely resembles your baby’s skin</p>
+            </div>
+        </div>
+        <div class="group animate__animated animate__fadeInDown">
+            <div class="btn-group1">
+                <div class="btn">
+                    <img src="assets/landingpage/dryop1.png" alt="">
+                </div>
+                <div class="op">
+                    <button class="option" id="option1" value="1">Normal, No sign of dry skin</button>
+                </div>
+            </div>
+            <div class="btn-group2">
+                <div class="btn">
+                    <img src="assets/landingpage/dryop2.png" alt="">
+                </div>
+                <div class="op ">
+                    <button class="option" id="option2" value="2" href="Q2.html">Dry Skin, Visible Scaling</button>
+                </div>
+            </div>
+            <div class="btn-group3">
+                <div class="btn">
+                    <img src="assets/landingpage/dryop3.png" alt="">
+                </div>
+                <div class="op">
+                    <button class="option" id="option3" value="3" href="Q2.html">Very dry skin, cracking/fissures</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="desktop">
+                <img src="assets/landingpage/bottomq.png" alt="">
+            </div>
+            <div class="mobile">
+                <img src="assets/landingpage/bottomqmob.png" alt="">
+            </div>
+        </div>
+        <div class="back">
+        </div>
+    </section>
+    <script> //stores the values of the buttons in the local storage
+        var reset = 0;
+        var option1 = document.getElementById("option1");
+        if (option1) {
+            option1.addEventListener("click", function (e) {
+            var score = 0;
+            localStorage.setItem("value", reset);
+            console.log(localStorage.getItem("value"));
+            var q1 = parseInt(document.getElementById("option1").value);
+            console.log(document.getElementById("option1").value);
+            score = score + q1;
+            localStorage.setItem("value", score);
+            console.log(localStorage.getItem("value"));
+            location.href = "Q2.html";
+          });
+        }
+        
+        var option2 = document.getElementById("option2");
+        if (option2) {
+            option2.addEventListener("click", function (e) {
+            var score = 0;
+            localStorage.setItem("value", reset);
+            console.log(localStorage.getItem("value"));
+            var q1 = parseInt(document.getElementById("option2").value);
+            score = score + q1;
+            localStorage.setItem("value", score);
+            console.log(localStorage.getItem("value"));
+            location.href = "Q2.html";
+          });
+        }
+        
+        // adds the value from local storage with the current selected button's value (rg: 1 + 2 = 3, 3 gets stored in local storage now)
+        var option3 = document.getElementById("option3");
+        if (option3) {
+            option3.addEventListener("click", function (e) {
+            var score = 0;
+            localStorage.setItem("value", reset);
+            console.log(localStorage.getItem("value"));
+            var q1 = parseInt(document.getElementById("option3").value);
+            score = score + q1;
+            localStorage.setItem("value", score);
+            console.log(localStorage.getItem("value"));
+            location.href = "Q2.html";
+          });
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" type="image/x-icon" href="assets/landingpage/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>A few Things about the Test</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://equalstwo.com/"><img src="assets/landingpage/logo.png" alt=""></a>
+            </div>
+            <div class="hamburger">
+                <!-- <img src="assets/landingpage/hamburger.svg" alt=""> -->
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="heading">
+            <h1>
+                Let's get to know you
+            </h1>
+        </div>
+        <div class="formcontainer">
+            <form action="https://equalstwo.com/microsite/skintest/process-form.php" method="POST" class="form">
+                <div class="input-box">
+                    <label for="Name">Full Name</label>
+                    <input id="Name" name="name" type="text" placeholder="Enter your Full Name" required>
+                </div>
+                <div class="input-box">
+                    <label for="emailID">Email ID</label>
+                    <input id="emailID" name="email" type="email" placeholder="Enter your Email ID" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone No.</label>
+                    <input id="phone" name="phoneNo" type="number" placeholder="Enter your Phone Number" required>
+                </div>
+                <div class="input-box">
+                    <label for="dateofbirth">Birth Date</label>
+                    <input type="date" id="dateofbirth" name="DOB" placeholder="Enter Birth Date" required>
+                </div>
+                <div class="column">
+                    <div class="input-box1">
+                        <label class="container"><p>It's a Boy!</p>
+                            <input type="radio" value="male" checked="checked" name="gender">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                    <div class="input-box1">
+                        <label class="container"><p>It's a Girl!</p>
+                            <input type="radio" value="female" name="gender">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                </div>
+                <div class="buttoncontainer">
+                    <a href="Q1.html"><button>Submit</button></a>
+                </div>
+            </form>
+        </div>
+        <div class="bottom animate__animated animate__fadeInUp">
+            <img class="desktop" src="assets/landingpage/formbottomdesk.png" alt="">
+        </div>
+        <div class="tabcontainer">
+            <div class="tablet">
+                <img src="assets/landingpage/formbottomtablet.png" alt="">
+            </div>
+        </div>
+        <div class="mobile">
+            <img src="assets/landingpage/formbottommob.png" alt="">
+        </div>
+    </section>
+</body>
+</html>

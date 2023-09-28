@@ -1,0 +1,407 @@
+:root
+{
+    --landing-purple: #7E69BA;
+    --landing-yellow: #FEF5C2;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--landing-purple);
+    font-size: 26px;
+    color: white;
+    font-weight: 500;
+}
+
+.guagecont
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.indi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3vh;
+}
+
+.indicator
+{
+    position: absolute;
+    z-index: 100;
+    /* animation-direction: alternate-reverse; */
+}
+
+.noted
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.scorecont
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+.score
+{
+    text-align: center;
+    position: absolute;
+}
+
+.child
+{
+    font-size: 22px;
+}
+
+.number
+{
+    font-size: 62px;
+    margin-top: -3vh;
+    font-weight: 500;
+    color: var(--landing-purple);
+}
+
+.animalscont
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.animals
+{
+    position: absolute;
+    z-index: 100;
+}
+.animals img
+{
+    width: 100%;
+}
+
+.subtitle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--landing-purple);
+    font-size: 26px;
+    color: white;
+    font-weight: 500;
+    margin-top: 1.5%;
+}
+
+.back
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgbg
+{
+    max-height: 100%;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(180deg, #FEF5C2 1.04%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(-180deg);
+}
+
+.productcont
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40vh;
+}
+
+.products
+{
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products img
+{
+    width: 60%
+}
+
+.butt
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 14%;
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 101;
+    background-color: #7e69ba;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 24px;
+    font-style: normal;
+    text-decoration: none;
+    border: 0px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 4px 6px -4px #2D2D2D;
+   }
+   .buy:hover{
+    background-color: #9080c2;
+    cursor: pointer;
+   }
+   .buy:active{
+    transform: scale(0.95);
+   }
+
+   .butt img
+   {
+    width:100%
+   }
+
+   .butt2
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+   }
+
+   .retake{
+    position: absolute;
+    z-index: 101;
+    background-color: #ffffff;
+    color: #7e69ba;
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 8px 42px;
+    border: 2px solid #7e69ba;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px -4px #2D2D2D;
+   }
+   .retake span{
+    margin-left:24px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyNyAyNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS41MTU2IDEzLjUwMDVDMjEuNTE2MiAxNS4yNDAyIDIwLjkxOTUgMTYuOTI3MyAxOS44MjUyIDE4LjI3OTdDMTguNzMwOSAxOS42MzIxIDE3LjIwNTQgMjAuNTY3OCAxNS41MDM5IDIwLjkzMDJDMTMuODAyNCAyMS4yOTI2IDEyLjAyOCAyMS4wNTk5IDEwLjQ3NzYgMjAuMjcwOEM4LjkyNzE3IDE5LjQ4MTcgNy42OTQ2NyAxOC4xODQzIDYuOTg2MjUgMTYuNTk1M0w0LjYzODk0IDE3LjU0ODhDNS41Njk0NiAxOS42ODA5IDcuMjA1NjggMjEuNDI3NiA5LjI3MjUxIDIyLjQ5NTJDMTEuMzM5MyAyMy41NjI5IDEzLjcxMDcgMjMuODg2NCAxNS45ODggMjMuNDExNEMxOC4yNjUzIDIyLjkzNjQgMjAuMzA5NiAyMS42OTE4IDIxLjc3NzIgMTkuODg2OUMyMy4yNDQ5IDE4LjA4MiAyNC4wNDYzIDE1LjgyNjggMjQuMDQ2OSAxMy41MDA1QzI0LjA0NyAxMS4zODczIDIzLjM4NTkgOS4zMjcgMjIuMTU2MiA3LjYwODM5QzIwLjkyNjYgNS44ODk3OSAxOS4xOSA0LjU5OSAxNy4xODk5IDMuOTE2OTJDMTUuMTg5OCAzLjIzNDg0IDEzLjAyNjQgMy4xOTU2NiAxMS4wMDMgMy44MDQ4N0M4Ljk3OTQ4IDQuNDE0MDggNy4xOTczMiA1LjY0MTE1IDUuOTA2MjUgNy4zMTQxVjQuMjE5MjJIMy4zNzVWMTAuOTY5Mkw0LjY0MDYyIDEyLjIzNDhIMTAuNTQ2OVY5LjcwMzZINy4zNDRDOC4xNzk0OSA4LjI1NTE3IDkuNDY5NjkgNy4xMjMgMTEuMDE0NCA2LjQ4Mjc4QzEyLjU1OTEgNS44NDI1NyAxNC4yNzE5IDUuNzMwMSAxNS44ODcxIDYuMTYyODNDMTcuNTAyMiA2LjU5NTU3IDE4LjkyOTQgNy41NDkzIDE5Ljk0NzEgOC44NzYwNUMyMC45NjQ4IDEwLjIwMjggMjEuNTE2MiAxMS44Mjg0IDIxLjUxNTYgMTMuNTAwNVoiIGZpbGw9IiM3RTY5QkEiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+   }
+   .retake:hover{
+    background-color: #f2f2f2;
+    cursor: pointer;
+   }
+   .retake:active{
+    transform: scale(0.95);
+   }
+
+   .foot
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+   }
+
+   footer
+   {
+    text-align: center;
+    position: absolute;
+    z-index: 101;
+    background-color: white;
+    width: 100%;
+   }
+
+   .animals
+   {
+    display: block !important;
+   }
+.animalsmob
+{
+    display: none !important;
+}
+.productstab
+{
+    display: none !important;
+}
+
+
+@media (max-width: 420px)
+{
+    .title p
+    {
+        font-size: 20px;
+    }
+    .subtitle p
+    {
+        font-size: 20px;
+    }
+    .guagecont
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 2vh;
+    }
+
+    .guage img
+    {
+        max-width: 90%;
+    }
+
+    .note
+    {
+        text-align: center;
+    }
+    .note img
+    {
+        max-width: 90%;
+    }
+    .noted
+    {
+        margin-top: 5vh;
+    }
+
+    .child
+    {
+        font-size: 16px;
+        margin-top: 35%;
+    }
+    .number
+    {
+        font-size: 55px;
+        margin-top: -28%;
+    }
+    .animals
+    {
+        display: none !important;
+    }
+    .animalsmob
+    {
+        display: block !important;
+        margin-top: -20%;
+    }
+    .animalsmob img
+    {
+        width: 100%;
+    }
+    .title
+    {
+        font-size: 20px;
+    }
+    .subtitle
+    {
+        font-size: 18px;
+        margin-top: -1.5%;
+    }
+    .products
+    {
+        display: none !important;
+    }
+    .productstab
+    {
+        display: block !important;
+        text-align: center;
+        z-index: 100;
+        margin-top: -35vh;
+    }
+
+    .productstab img
+    {
+        width: 90%;
+    }
+    .buy img
+    {
+        width: 70%;
+    }
+    .buy
+    {
+        padding: 10px 2px;
+    }
+    .retake
+    {
+        padding: 10px 28px;
+        margin-top: 10%;
+        font-size: 16px;
+    }
+    .butt
+    {
+        margin-top: 10vh;
+    }
+    .butt2
+    {
+        margin-top: 5vh;
+    }
+    .foot
+    {
+        margin-top: 20vh;
+    }
+    .number
+    {
+        padding-top: 6%;
+    }
+    .logo img
+    {
+        width: 60%;
+    }
+    .hamburger img
+    {
+        width: 50%;
+    }
+    nav
+    {
+        padding: 10px 10px 5px 10px;
+    }
+
+    .bgbg
+    {
+        height: 80vh;
+    }
+}
